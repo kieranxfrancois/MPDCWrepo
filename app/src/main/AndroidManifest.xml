@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.me.gcu.kfmpdcws1835773">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="MPD CW Kieran Francois S1835773"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".liveIncidentsActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".currentRoadworksActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".futureRoadworksActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+    </application>
+</manifest>
+<!--Kieran Francois, S1835773, MPD CW TRI B 2021/22-->

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/backgroundPic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/salutation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bootleg_comic_sans"
+        android:text="Traffic Scotland Information\nKieran Francois - S1835773"
+        android:textAlignment="center"
+        android:textColor="@color/navy"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/white"
+        android:shadowDx="1.5"
+        android:shadowDy="1.8"
+        android:shadowRadius="8"/>
+
+    <Button
+        android:id="@+id/liveIncidentsButton"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignStart="@id/currentRoadworksButton"
+        android:layout_marginStart="-220dp"
+        android:background="@drawable/oval_button"
+        android:text="Live Incidents"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/currentRoadworksButton"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/oval_button"
+        android:text="Current Roadworks"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/plannedRoadworksButton"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignStart="@id/currentRoadworksButton"
+        android:layout_marginStart="220dp"
+        android:background="@drawable/oval_button"
+        android:text="Upcoming Roadworks"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+    <!--Kieran Francois, S1835773, MPD CW TRI B 2021/22-->
